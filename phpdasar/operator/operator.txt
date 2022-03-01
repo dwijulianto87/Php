@@ -1,0 +1,71 @@
+
+Operator
+
+
+1. operator aritmatika/ matematika (*, /, +, -, %)
+   operator precedence (urutan operasi matematika -> kurkabataku)
+   
+   contoh :
+
+	<?php
+   	   $x = 5;
+    	   $y = 6;
+
+   	   echo $x * $y; // 30
+	?>
+
+
+
+2. operator assignment/ penugasan  (=, *=, /=, +=, -=, %=) -> (binary)**
+   
+   contoh :
+
+	<?php
+   	    $x = 5;  // variable x assignment 5
+   	    $buah = "pisang";   // variable nama assignment "pisang"
+	?>
+
+
+
+3. operator comparison/ perbandingan (==, !=, <, >, <=, >=)
+   
+   contoh :
+
+	<?php
+   	    10 < 15; // true
+   	    10 > 15; //false
+	?>
+
+
+
+
+
+4. operator logical/ logika (&&, ||, !) 
+   
+   contoh :
+
+	<?php
+     	    var_dump( 6 < 2 && 6 % 2 == 0); // false
+            var_dump( 6 < 2 || 6 % 2 == 0); // true
+	?>
+
+
+
+5. operator concatenation (.);
+   
+   contoh :
+
+	<?php
+     	   echo 'pisang' . ' goreng';
+	?>
+
+
+
+6. identitas (===, !==)
+   
+   contoh :
+
+	<?php
+     	   var_dump(5 === "5"); // false
+	?>
+

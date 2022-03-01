@@ -1,0 +1,94 @@
+
+
+1. looping (for, while, do.. while, foreach)
+
+a. for
+ 	
+contoh :
+	<?php
+
+	    $jumlah = 5;
+
+	    for( $i = 0; $i < count($jumlah); $i++ ){
+	    echo "index ke " . $i;
+	    echo "<br>";
+	    }
+	?>
+
+	index ke 0
+	index ke 1
+	index ke 2
+	index ke 3
+	index ke 4
+
+
+b. while
+ 	
+contoh :
+	<?php
+	    $i = 0; 
+
+	    while( $i < 5; ){
+		echo "index ke " . $i;
+		echo "<br>";
+		
+		$i++ 
+	    }
+	?>
+
+	// hasil
+
+	index ke 0
+	index ke 1
+	index ke 2
+	index ke 3
+	index ke 4
+
+
+c. foreach(array as item)
+ 	
+contoh :
+	<?php
+	    $numbers = [1,2,3,4,5,6,7,8,9,0];
+
+	    foreach($numbers as $number){
+		echo $number;
+		echo "<br>";
+		
+	    }
+	?>
+
+	// hasil
+
+	1
+	2
+	3
+	4
+	5
+	6
+	7
+	8
+	9
+	0
+
+
+
+2. pengkondisian (if, if else, if else if else, ternary, switch)
+
+a. if else
+ 	
+contoh :
+	<?php
+
+	    $x = 21;
+	    if($x % 2 === 0){
+		echo 'Genap';
+	    }else{
+		echo "Ganjil";
+	    }
+	?>
+
+	// hasil
+
+	Ganjil
+

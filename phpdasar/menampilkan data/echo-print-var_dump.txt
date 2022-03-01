@@ -1,0 +1,35 @@
+
+
+
+
+// kutip 1 dan kutip 2 digunakan untuk tipe data string
+// kutip 2 lebih unggul karena bisa untuk interpolasi variable
+
+
+<?php
+
+// untuk menampilkan data ***********************************************************
+
+// $umur = 30;
+
+
+
+// echo 'Dwi julianto'; // Dwi julianto
+
+// print "Dwi julianto"; // Dwi julianto
+
+// print_r ("Dwi julianto"); // Dwi julianto
+
+
+
+// echo 'Dwi julianto, umur $umur'; // Dwi julianto, umur $umur
+
+// echo "Dwi julianto, umur $umur"; // Dwi julianto, umur 30
+
+// untuk debuging********************************************************************
+// var_dump ("Dwi julianto"); // string(12) "Dwi julianto"
+
+?>
+
+
+

@@ -1,0 +1,28 @@
+
+
+setelah selesai menginstall xampp :
+
+1. buka control panel xampp -> klick start modul apache
+2. buka web browser -> ketik dan enter "localhost" (localhost == folder htdocs)
+	a. file yang pertama dieksekusi index.php
+	b. jika file index.php tidak ada, maka file index.html yang dieksekusi
+	c. jika index.php dan index.html tidak ada, maka akan menampilkan seluruh isi folder htdocs
+
+3. buka xampp - htdocs (file php wajib disimpan di folder ini)
+
+
+contoh :
+
+1. buat folder baru didalam xampp - htdocs (phpdasar)
+2. buat file php baru di dalam folder phpdasar (index.php), dengan script berikut :
+
+	<?php
+	     echo "Dwi julianto";
+	?>
+
+3. buka web browser -> ketik dan enter "localhost/phpdasar"
+
+	maka di halaman browser akan tampil teks "Dwi julianto"
+
+
+

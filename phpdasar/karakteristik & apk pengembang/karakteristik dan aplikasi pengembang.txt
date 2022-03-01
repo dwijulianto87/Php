@@ -1,0 +1,31 @@
+
+
+
+PHP(hypertext preprocessor) adalah bahasa pemrograman yang berjalan di server(server-side scripting), karena itu kita membutuhkan sebuah web server.
+https://www.php.net/manual/en/
+
+karakteristik :
+1. ekstensi file .php
+2. ditulis didalam tag <?php ----- ?>
+3. bisa digunakan bersamaan dengan html
+4. dasar bahasa yang digunakan bahasa pemrograman C. 
+
+
+
+lingkungan pengembang yang harus dinstall :
+1. code editor(vscode)
+2. web server (apache)
+3. database server (mysql)
+4. web browser (chrome)
+   -> xampp (apache + php + mysql)
+
+ 
+
+
+
+
+
+
+
+
+

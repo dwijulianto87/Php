@@ -1,0 +1,43 @@
+
+
+
+
+
+function
+
+1. built-in function..............................................
+
+<?php
+
+	// date/time( date(), time(), mktime(), strtotime())
+
+	echo date("l, d M Y"); // hari("l"), tanggal("d"), bulan("M/m"), tahun("Y")
+	echo date("l, d M Y", time()+60*60*24*100); // 100 hari yang akan datang
+
+
+	echo time() // detik dari 1-1-1970(unix timestemp)
+
+	echo datemktime(0,0,0,7,16,1987) // mktime(jam, mnt, dtk, bln, tgl, th) membuat waktu sendiri
+
+	echo date('l', mktime(0,0,0,7,16,1987)); // hari pada tgl/bln /th yg ditentukan
+
+	echo date('l', strtotime("07 july 1987"));
+
+
+?>
+
+
+
+
+2. user-defined function..............................................
+
+<?php
+
+	function perkalian($x, $y){
+		return $x * $y;
+	}
+
+
+	echo perkalian(5, 6); // 30
+
+?>

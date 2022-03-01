@@ -1,0 +1,76 @@
+
+
+
+Array ********************************************************************
+
+1. Numerik array
+   cara lama (), cara baru []
+
+<?php
+	//for-----------------------------------------------------
+
+	$newArrays = ["satu", 2, true];
+	$numbers = [1,2,3,4,5,6,7,8,9,0];
+
+	for($i = 0; $i < count($newArrays); $i++){
+		echo $newArrays[$i];
+		echo "<br>";
+	}
+
+	
+
+	// foreach(array as item) .................................................
+
+	foreach($numbers as $number){
+		echo $number;
+		echo "<br>";
+	}
+?>
+
+
+2. associative array ( "key" => "value" ) ....................................................
+   key(string)  kita buat sendiri
+
+<?php
+
+	$assocArray = [
+    		[
+        	  "nama" => "Dwi julianto",
+        	  "nohp" => "08999999999",
+        	  "email" => "dwigesoz@gmail.com",
+        	  "nilai" => [8,9,8,8]
+    		],
+    		[
+        	  "nama" => "Tyas arumdani",
+        	  "nohp" => "08999988888",
+        	  "email" => "tyas@gmail.com",
+        	  "nilai" => [8,9,8,9]
+    		],
+    		[
+        	  "nama" => "Yudhistira",
+        	  "nohp" => "0899997777",
+        	  "email" => "Yudhistira@gmail.com",
+        	  "nilai" => [8,9,8,10]
+    		]
+    	];
+
+    echo "<h1>Daftar Mahasiswa :</h1>";
+    foreach($assocArray as $item){
+        echo "<ul>";
+        echo "<li>Nama :" .$item['nama']; "</li>";
+        echo "<li>Telp :" .$item['nohp']; "</li>";
+        echo "<li>Email :" .$item['email']; "</li>";
+        echo "<li>Nilai :</li>";
+        echo "<ul>";
+            foreach($item['nilai'] as $nilai){
+                echo "<li>".$nilai; "</li>";
+            }
+        echo "</ul>";
+        echo "</ul>";
+    }
+?>
+
+
+
+
+
