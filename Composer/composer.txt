@@ -1,0 +1,34 @@
+
+
+A. Composer adalah tools dependency manager pada PHP, Dependency (ketergantungan) sendiri diartikan ketika project PHP yang kamu kerjakan masih membutuhkan atau memerlukan library dari luar. Composer berfungsi sebagai penghubung antara project PHP kamu dengan library dari luar.
+
+   dependency adalah ketergantungan antara file satu dengan file yang lainnya.
+
+   Dependency manager memungkinkan kamu untuk membuat dan mengambil library pada project PHP kamu pada library packagist.org. Packagist.org sendiri merupakan situs yang menyediakan banyak libary yang bisa kamu gunakan. Dengan bantuan tools tersebut kamu bisa terhubung pada situs packagist.org dan kamu dapat mengambil dan mengupload library.
+
+B. manfaat menggunakan composer saat mengerjakan projek PHP.
+
+   a. Dengan menggunakan Tools ini, Kamu bisa lebih terstruktur saat coding PHP dengan menggunakan konsep MVC.
+   b. Package yang kamu butuhkan saat mengerjakan projek PHP akan secara otomatis terinstal atau mengupdate tanpa harus menginstall secara manual.
+   c. Kamu tidak perlu melakukan include terhadap semua file php atau class php yang dibutuhkan dalam proyek PHP kamu, Karena sudah terdapat autoload yang akan menghandle fungsi tersebut.
+   d. Dengan menggunakan dependency manager yang terhubung dengan packagist, Kamu dapat dengan leluasa menggunakan ribuan package yang sudah tersedia packagist.org (getcomposer.org - browse package)
+
+C. Cara Install Composer
+
+   1. download di getcomposer.org
+   2. setelah didownload install composer(browser : xampp/php/php.exe)
+   3. buka cmd "composer" (jika ada keterangan detail composer maka install composer berhasil)
+
+
+
+D. menggunakan Composer
+
+   1. cari package getcomposer.org - browse package ( packagist.org )
+   2. setelah setelah mendapat package yang dicari(contoh : mpdf/mpdf), lalu install package difolder yang dipilih.
+   3. buka cmd (cd xampp/htdocs/project), setelah cd ke folder project lalu ketik dan enter perintah penginstallan dibawah
+   4. composer require mpdf/mpdf (download package faker ke folder project)
+
+
+ 
+
+

@@ -1,0 +1,27 @@
+
+
+$_GET -> variable super global yang digunakan untuk mengirimkan data melalui Url alamat website, diawali tanda tanya dan pasangan key & value
+
+> latihan_get.php?nama=Julianto
+
+contoh :
+
+> satu data
+localhost/phpdasar/latihan_get.php?nama=Julianto
+
+> dua data
+localhost/phpdasar/latihan_get.php?nama=Julianto&nomor=3310
+
+> menggunakan element html
+
+    <div class="container">
+        <a href="get-data.php?isNameDepan=Dwi&isNameBelakang=julianto">Dwi julianto</a>
+    </div>
+
+- dengan menggunakan method GET pada element form, data yang ada didalam element form akan dimasukan ke variable $_GET berupa array association
+- dengan menggunakan attribute "name" pada element input akan digunakan sebagai key untuk mengakses nilai inputan
+- attribute action, digunakan untuk menyematkan url tujuan data yang dikirim
+- contoh mengambil data :
+
+	$_GET["isNameDepan"];
+	$_GET["isNameBelakang"];

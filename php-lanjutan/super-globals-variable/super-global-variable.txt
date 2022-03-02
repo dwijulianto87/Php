@@ -1,0 +1,50 @@
+
+
+1. variable scope / lingkup variable
+   global variable -> keyword yang dituliskan sebelum nama variable, untuk mengakses variable yang ada diluar function
+
+	contoh :
+
+	<? php
+		//variabel lokal secara keseluruhan halaman 
+		$x = 5;
+
+		function cetak() {
+			// $x = 10; // mengacu ke variable lokal scope function 
+
+			// global $x; // menggunakan keyword "global" mengacu ke variable lokal scope diluar function 
+
+			echo $x; 
+		}
+
+		cetak();
+	?>
+
+
+
+
+2. Super Global variable
+   Super global variable -> variable(array associative) yang dimiliki php, yang dapat diakses kapanpun dan dimanapun
+
+
+   a. $_GET
+   b. $_POST
+   c. $_REQUEST
+   d. $_SESSION
+   e. $_COOKIE
+   f. $_SERVER
+   g. $_ENV
+
+
+
+
+
+
+
+
+
+
+
+
+
+

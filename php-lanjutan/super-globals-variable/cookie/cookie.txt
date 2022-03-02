@@ -1,0 +1,53 @@
+
+
+# cookie ( $_COOKIE )
+
+a. mekanisme penyimpanan informasi kedalam variable agar bisa digunakan dilebih dari satu halaman
+
+b. informasi disimpan dibrowser/client
+
+c. diawali dengan script ( setcookie('key', 'value', waktu(opsional) )
+
+
+contoh : 
+
+1. file halaman1.php
+
+   <?php
+	setcookie('nama', 'Dwi julianto') ;
+   ?>
+
+
+
+2. file halaman2.php
+
+   <?php
+	echo $_COOKIE['nama'];
+   ?>
+
+
+
+-> browser - inspeksi - application - cookies
+
+
+# ketika file halaman1.php di load 
+a. cookie akan dijalankan melalui script ( setcookie('nama', 'Dwi julianto'); )
+b. maka variable $_COOKIE['nama'] bernilai 'Dwi julianto' dan dapat diakses di file mana pun(contoh halaman2.php) selama file tersebut diawali dengan script ( $_COOKIE['nama']; )
+   dan selama browser tidak ditutup atau komputer di restart/mati
+c. dengan menambahkan value ke parameter ketiga di script setcookie(), cookie tidak akan hilang walaupun browser ditutup
+
+   <?php
+	// cookie tidak hilang selama 1 menit, walaupun browser ditutup
+
+	setcookie('nama', 'Dwi julianto', time()+60) ;
+   ?>
+
+
+
+
+
+
+
+
+
+

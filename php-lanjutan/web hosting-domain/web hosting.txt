@@ -1,0 +1,66 @@
+
+A. Domain & Hosting
+
+   1. buka dan dapatkan domain diwebsite pilihan.
+
+   2. jika penyedia domain dan penyedia hosting berbeda perusahaan/website, ikuti langkah berikut :
+
+      > services - manage domain - management tools - name servers
+      > use custom nameservers(lima) domain, dengan nameservers dari penyedia hosting
+ 
+   3. setelah poin ke 2 di jalankan, buka website penyedia hosting dan masukkan domain pilihan yang nameserversnya sudah disinkronkan (mendapatkan usernam & password) - create account
+
+   4. refresh browser - control panel web hosting - online file manager - htdocs (lokasi upload file website)
+
+   5. control panel web hosting - FTP Accounts (info accounts FTP)
+
+
+B. upload file website dengan FTP client (filezilla client)
+
+   1. install dan buka filezilla
+
+   2. masukkan protocol FTP ( host, username, password, port) - quickconnect // detail FTP di poin 5
+
+   3. kiri(local computer) | kanan(webserver)
+
+   4. hapus semua file didalam htdocs di webserver
+
+   5. copy/drag semua file yang ada didalam folder website kita di local computer(kiri) ke folder htdocs web server(kanan)
+
+   6. control panel web hosting - alter php config - display error(on) & php timezone(jakarta) -> menampilkan pesan error.
+
+
+C. Membuat database di web hosting
+
+   1. control panel web hosting - phpMyAdmin - nama_database - create database
+
+   2. MySQL DB Name - MySQL userName - MySQL Password - MySQL Host Name (pengganti koneksi localhost)
+  
+   3. buat tabel/import dari hasil exsport di database lokal, ke database yang baru dibuat di web hosting.
+
+   4. buka htdocs di web hosting menggunakan filezilla - dowload/klik kanan file connection database(pilih visit/edit) - edit localhost menjadi MySQL DB pada poin 2
+
+   5. selesai.
+
+D. Sub Domain
+   
+   .........................
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

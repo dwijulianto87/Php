@@ -1,0 +1,21 @@
+
+1. koneksi ke database (host, username, password, database)
+   $conn = mysqli_connect("localhost", "root", "", "phpdasar");
+
+
+2. query tabel (koneksi database, query ke tabel)
+   $hasil = mysqli_query($conn, "SELECT * FROM mahasiswa");
+   var_dump($hasil)
+
+   > jika gagal -> variable $hasil berisi false
+   > jika berhasil -> variable $hasil berisi object
+
+3. ambil data dari variable $hasil menggunakan fetch
+   a. mysqli_fetch_row() // return 1 index(numerik)
+   b. mysqli_fetch_assoc() // return 1 index(associative)
+   c. mysqli_fetch_array() // return 1 index(numerik dan associative)
+   d. mysqli_fetch_object() //
+
+
+4. untuk lebih lanjutnya bisa dilihat di function - latihan MySQLi
+

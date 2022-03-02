@@ -1,0 +1,60 @@
+
+
+# session ( $_SESSION )
+
+a. mekanisme penyimpanan informasi kedalam variable agar bisa digunakan dilebih dari satu halaman
+
+b. informasi disimpan diserver
+
+c. diawali dengan script ( session_start() )
+
+
+contoh : 
+
+1. file halaman1.php
+
+   <?php
+	session_start();
+
+	$_SESSION['nama'] = 'Dwi kece';
+   ?>
+
+
+
+2. file halaman2.php
+
+   <?php
+	session_start();
+
+	var_dump($_SESSION['nama']);
+   ?>
+
+
+
+3. file halaman3.php
+
+   <?php
+	session_start();
+
+	session_destroy();
+   ?>
+
+
+
+
+# ketika file halaman1.php di load 
+a. session akan dijalankan melalui script ( session_start(); )
+b. maka variable $_SESSION['nama'] bernilai 'Dwi kece' dan dapat diakses di file mana pun(contoh halaman2.php) selama file tersebut diawali dengan script ( session_start(); )
+   dan selama browser tidak ditutup atau komputer di restart?mati
+c. menghilangkan session dengan script ( session_destroy(); )
+   dengan menjalankan file halaman3.php, tanpa menutup browser atu mematikan komputer session akan hilang
+
+
+
+
+
+
+
+
+
+

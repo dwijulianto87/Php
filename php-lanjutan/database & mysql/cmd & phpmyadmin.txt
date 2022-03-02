@@ -1,0 +1,70 @@
+1. Database
+   Database atau basis data adalah kumpulan data yang dikelola sedemikian rupa berdasarkan ketentuan tertentu yang saling berhubungan sehingga mudah dalam pengelolaannya. Melalui pengelolaan tersebut pengguna dapat memperoleh kemudahan dalam mencari informasi, menyimpan informasi dan membuang informasi.
+
+2. MySQL
+   > MySQL adalah sebuah database management system (manajemen basis data) menggunakan perintah dasar SQL (Structured Query Language) yang cukup terkenal. Database management system (DBMS) MySQL multi pengguna dan multi alur ini sudah dipakai
+
+   > MySQL adalah DBMS yang open source dengan dua bentuk lisensi, yaitu Free Software (perangkat lunak bebas) dan Shareware (perangkat lunak berpemilik yang penggunaannya terbatas). Jadi MySQL adalah database server yang gratis dengan lisensi GNU General Public License (GPL) sehingga dapat Anda pakai untuk keperluan pribadi atau komersil tanpa harus membayar lisensi yang ada.
+
+   > Seperti yang sudah disinggung di atas, MySQL masuk ke dalam jenis RDBMS (Relational Database Management System). Maka dari itu, istilah semacam baris, kolom, tabel, dipakai pada MySQL. Contohnya di dalam MySQL sebuah database terdapat satu atau beberapa tabel.
+
+   > SQL sendiri merupakan suatu bahasa yang dipakai di dalam pengambilan data pada relational database atau database yang terstruktur. Jadi MySQL adalah database management system yang menggunakan bahasa SQL sebagai bahasa penghubung antara perangkat lunak aplikasi dengan database server.
+
+   > istilah
+
+database 
+  |
+tabel 
+-> field/colomn
+-> row 
+-> key(primary, foreign key) 
+-> auto increment 
+-> relationship 
+-> normalization
+
+3. create database from command promp
+
+-> buka control panel xampp - start (MySQL)
+
+> buka command promp (cd xampp\mysql\bin)
+> mysql -u root -p
+> enter password:
+> show databases; // menampilkan seluruh databases
+> create database namedatabase; // membuat data base baru
+> use namedatabase; // masuk ke database yang dipilih
+> create table nametable(id int primary key auto_increment, nama varchar(100), nrp char(9)); // membuat table baru di data base yang dipilih
+> describe nametable; // menampilkan struktur table
+> drop database namedatabase; // menghapus database
+> drop table nametable; // menghapus table
+> INSERT INTO nametable VALUES('', 'Dwi julianto', '123456789'); // input data ke table
+> show tables; // menampilkan seluruh table 
+> SELECT * FROM nametable; // menampilkan semua data table
+> SELECT nama FROM nametable; // menampilkan semua data table(hanya nama)
+> SELECT nrp, nama FROM nametable; // menampilkan semua data table(hanya nrp dan nama)
+> SELECT * FROM nametable where nrp = "123456789"; // menampilkan data table yang nrp nya '123456789'
+> UPDATE nametable set nama = "Tyas arumdani" WHERE ID = 2; // mengubah nama berdasarkan ID pada data table
+> DELETE FROM nametable WHERE ID = 2; // menghapus data berdasarkan ID pada data table
+
+
+3. create database from broswer
+
+-> buka control panel xampp - start (MySQL)
+-> ketik dibroswer http://localhost/phpmyadmin/
+
+-> membuat database
+> database - namedatabase(Collation) - create
+
+
+-> membuat table
+> database - nametable - 3 - go
+> id - INT - PRIMARY - checkbok A_I
+> nama - VARCHAR - lenght/value (200)
+> nrp - VARCHAR - lenght/value (9)
+> save
+
+
+
+
+
+
+

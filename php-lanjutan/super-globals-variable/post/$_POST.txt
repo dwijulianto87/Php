@@ -1,0 +1,27 @@
+
+
+$_POST -> variable super global yang digunakan untuk mengirimkan data melalui attribut name suatu element, yang menggunakan method POST
+
+> <input type="text" name="isNameDepan" id="isNameDepan">
+
+contoh :
+
+> menggunakan form html
+
+        <form action="./get-data.php" method="POST">
+            <label for="isNameDepan">Nama depan : </label>
+            <input type="text" name="isNameDepan" id="isNameDepan">
+            <br><br>
+            <label for="isNameBelakang">Nama belakang : </label>
+            <input type="text" name="isNameBelakang" id="isNameBelakang">
+            <br><br>
+            <button type="submit">Kirim</button>
+        </form>
+
+- dengan menggunakan method POST pada element form, data yang ada didalam element form akan dimasukan ke variable $_POST berupa array association
+- dengan menggunakan attribute "name" pada element input akan digunakan sebagai key untuk mengakses nilai inputan
+- attribute action, digunakan untuk menyematkan url tujuan data yang dikirim
+- contoh mengambil data :
+
+	$_POST["isNameDepan"];
+	$_POST["isNameBelakang"];
