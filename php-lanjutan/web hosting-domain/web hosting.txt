@@ -32,11 +32,11 @@ B. upload file website dengan FTP client (filezilla client)
 
 C. Membuat database di web hosting
 
-   1. control panel web hosting - phpMyAdmin - nama_database - create database
+   1. control panel web hosting - MySQL Database - nama_database - create database
 
    2. MySQL DB Name - MySQL userName - MySQL Password - MySQL Host Name (pengganti koneksi localhost)
   
-   3. buat tabel/import dari hasil exsport di database lokal, ke database yang baru dibuat di web hosting.
+   3. control panel web hosting - PhpMyadmin, buat tabel/import dari hasil exsport di database lokal, ke database yang baru dibuat di web hosting.
 
    4. buka htdocs di web hosting menggunakan filezilla - dowload/klik kanan file connection database(pilih visit/edit) - edit localhost menjadi MySQL DB pada poin 2
 
@@ -44,7 +44,25 @@ C. Membuat database di web hosting
 
 D. Sub Domain
    
-   .........................
+   1. CPanel - subdomain
+
+   2. url (phplanjutan.phpdasar.com)
+
+      > subdomain (phplanjutan)
+
+      > domain (phpdasar.net)
+
+      > document root (htdocs/phplanjutan) // folder di Cpanel
+
+   3. buat folder phplanjutan di htdocs dan upload semua file di folder phplanjutan
+   
+      > ulangi poin B kecuali no 4
+      
+      > ulangi poin C untuk membuat database untuk subdomain (untuk username dan password mysql buat sendiri) .
+         - add username & password mysql 
+         - add user to database
+         
+      > control panel web hosting - PhpMyadmin (untuk melihat poin C-2)
 
 
 
